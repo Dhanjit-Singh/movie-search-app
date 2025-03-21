@@ -1,8 +1,7 @@
 {
     "version": 2,
-    "public": "public",
     "builds": [
-      { "src": "vercel.sh", "use": "@vercel/static-build", "config": { "zeroConfig": true } }
+      { "src": "public/index.php", "use": "@vercel/php" }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "public/index.php" }
